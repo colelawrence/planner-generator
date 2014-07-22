@@ -1,16 +1,16 @@
 {
-  "name": "jade-server",
-  "description": "a dynamic jade server",
+  "name": "jade-dev",
+  "description": "a dynamic jade server w/ parse error reports and directory indexing",
   "version": "0.0.1",
-  "bin": "./jade-server.js",
+  "bin": "./jade-dev.js",
   "preferGlobal": "true",
-  "author": "Dustin Diaz <dustin@dustindiaz.com> (http://dustindiaz.com)",
+  "author": "Cole Lawrence (@ZombieHippie)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ded/jade-server.git"
+    "url": "https://github.com/ZombieHippie/jade-server.git"
   },
   "dependencies": {
     "node-static": "0.7.x",
-    "jade": "1.1.x"
+    "jade": "1.4.x"
   }
 }

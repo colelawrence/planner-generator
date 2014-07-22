@@ -19,4 +19,12 @@ cd myfolder
 jade-server .
 ```
 
+or
+``` sh
+cd myfolder
+jade-server . 8081
+```
+
+for a different port
+
 open your browser to [http://localhost:8080/index.jade](http://localhost:8080/index.jade)
