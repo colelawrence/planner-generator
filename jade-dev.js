@@ -3,6 +3,7 @@ var fs = require('fs')
   , http = require('http')
   , jade = require('jade')
   , static = require('node-static')
+  , moment = require('moment')
   , pathUtil =require('path')
   , jadeRe = /\.jade$/
   , path = process.argv.slice(2)[0]
@@ -29,6 +30,7 @@ http.createServer(function (req, res) {
     try {
       res.end(jade.renderFile('.' + req.url, {
         filename: '.' + req.url.replace(jadeRe, ''),
+        moment: moment,
         pretty: true
       }))
     } catch (parseError) {
